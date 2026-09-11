@@ -2,6 +2,8 @@
 
 A small Go service that watches a Gmail INBOX over IMAPS and automatically replies to messages from addresses listed in `senders.txt`.
 
+Why? I was in need of a away notification outside of the default vacation function in gMail that didn't send replies to everyone. And this worked!
+
 ## Design
 
 - Gmail IMAP over TLS (`imap.gmail.com:993`)
