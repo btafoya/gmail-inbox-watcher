@@ -30,6 +30,9 @@ Google currently supports IMAP for Gmail accounts; IMAP access is always enabled
 ## Quick start
 
 ```bash
+git clone https://github.com/btafoya/gmail-inbox-watcher.git
+cd gmail-inbox-watcher
+
 cp .env.example .env
 cp senders.txt.example senders.txt
 cp reply.txt.example reply.txt
@@ -158,3 +161,7 @@ It does not:
 - guarantee exactly-once email delivery
 
 The architecture keeps those features easy to add later.
+
+## License
+
+[MIT](LICENSE)
