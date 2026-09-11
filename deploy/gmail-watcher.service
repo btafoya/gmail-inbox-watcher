@@ -1,0 +1,25 @@
+[Unit]
+Description=Gmail Inbox Watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=gmail-watcher
+Group=gmail-watcher
+WorkingDirectory=/etc/gmail-watcher
+ExecStart=/usr/local/bin/gmail-watcher
+Restart=always
+RestartSec=10
+
+# Credentials live in /etc/gmail-watcher/.env.
+EnvironmentFile=/etc/gmail-watcher/.env
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/etc/gmail-watcher
+
+[Install]
+WantedBy=multi-user.target

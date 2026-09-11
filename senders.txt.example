@@ -1,0 +1,5 @@
+# One exact email address per line.
+# Blank lines and lines beginning with # are ignored.
+
+alice@example.com
+bob@example.org

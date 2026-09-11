@@ -1,0 +1,7 @@
+From: Alice <alice@example.com>
+To: me@example.com
+Subject: Test message
+Message-ID: <abc@example.com>
+References: <previous@example.com>
+
+Hello from the test fixture.

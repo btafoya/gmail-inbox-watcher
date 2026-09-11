@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Real config data (see *.example for templates)
+senders.txt
+reply.txt
+
+# Runtime state
+state.json
+
+# Build output
+/bin/
+/dist/
+/*.exe
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
